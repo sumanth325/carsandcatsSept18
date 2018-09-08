@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cat Details</title>
+</head>
+<body>
+    <h1>Cat Details</h1>
+    <h2>Favorite Food:</h2>
+    <h4> <%= data.food %> </h4>
+    <h2>Age:</h2>
+    <h4> <%= data.age %> </h4>
+    <h2>Favorite Spots:</h2>
+    <% for (var x in data.spots) { %>
+        <h4> <%= data.spots[x] %></h4>
+    <% } %>
+</body>
+</html>
